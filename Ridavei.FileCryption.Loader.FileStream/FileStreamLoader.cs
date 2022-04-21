@@ -5,7 +5,7 @@ using System.Security;
 namespace Ridavei.FileCryption.Loader.FileStream
 {
     /// <summary>
-    /// Static class for extending the <see cref="AFileCryptionBuilderBase"/>.
+    /// Static class for extending the <see cref="AFileCryptionBuilderBase{T}"/>.
     /// </summary>
     public static class FileStreamLoader
     {
@@ -17,14 +17,15 @@ namespace Ridavei.FileCryption.Loader.FileStream
         /// <param name="fileAccess">Enum used to determine how the file can be accessed.</param>
         /// <param name="fileShare">Enum used to determine how the file will be shared by processes.</param>
         /// <returns>Builder</returns>
-        public static AFileCryptionBuilderBase UseFileStreamLoader(this AFileCryptionBuilderBase builder, FileMode fileMode = FileMode.Open, FileAccess fileAccess = FileAccess.Read, FileShare fileShare = FileShare.Read)
+        public static T UseFileStreamLoader<T>(this AFileCryptionBuilderBase<T> builder, FileMode fileMode = FileMode.Open, FileAccess fileAccess = FileAccess.Read, FileShare fileShare = FileShare.Read)
+            where T : AFileCryptionBuilderBase<T>
         {
             builder.SetFileLoaderMethod((object filePath) =>
             {
                 return LoadFile(filePath.ToString(), fileMode, fileAccess, fileShare);
             });
 
-            return builder;
+            return (T)builder;
         }
 
         /// <summary>

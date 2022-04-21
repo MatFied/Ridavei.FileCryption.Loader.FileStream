@@ -23,7 +23,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Ridavei.FileCryption" Version="1.0.0" />
+		<PackageReference Include="Ridavei.FileCryption" Version="1.0.1" />
 	</ItemGroup>
 
 </Project>
