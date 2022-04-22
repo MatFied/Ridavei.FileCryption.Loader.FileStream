@@ -30,7 +30,6 @@ namespace Ridavei.FileCryption.Loader.FileStream.Tests
         {
             Assert.DoesNotThrow(() =>
             {
-                TestObj.UseFileStreamLoader();
                 using (Stream stream = TestObj
                     .UseFileStreamLoader()
                     .Encrypt(TestFilePath, new ContentType(MediaTypeNames.Text.Plain), "pass"))
