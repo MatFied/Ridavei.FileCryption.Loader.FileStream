@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ridavei.FileCryption.Loader.FileStream", "Ridavei.FileCryption.Loader.FileStream\Ridavei.FileCryption.Loader.FileStream.csproj", "{EAD2793F-555E-4B7C-9B6A-9CE024BD537C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ridavei.FileCryption.Loader.FileStream", "Ridavei.FileCryption.Loader.FileStream\Ridavei.FileCryption.Loader.FileStream.csproj", "{EAD2793F-555E-4B7C-9B6A-9CE024BD537C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ridavei.FileCryption.Loader.FileStream.Tests", "Ridavei.FileCryption.Loader.FileStream.Tests\Ridavei.FileCryption.Loader.FileStream.Tests.csproj", "{B2E266A1-BC19-4943-9BF3-9333C0762E47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{EAD2793F-555E-4B7C-9B6A-9CE024BD537C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAD2793F-555E-4B7C-9B6A-9CE024BD537C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAD2793F-555E-4B7C-9B6A-9CE024BD537C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2E266A1-BC19-4943-9BF3-9333C0762E47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2E266A1-BC19-4943-9BF3-9333C0762E47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2E266A1-BC19-4943-9BF3-9333C0762E47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2E266A1-BC19-4943-9BF3-9333C0762E47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
