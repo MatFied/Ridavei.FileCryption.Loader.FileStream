@@ -12,6 +12,10 @@
 		<RepositoryType>git</RepositoryType>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<SignAssembly>True</SignAssembly>
+		<AssemblyOriginatorKeyFile>Ridavei.snk</AssemblyOriginatorKeyFile>
+		<Version>1.0.1</Version>
+		<FileVersion>1.0.1</FileVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0|AnyCPU'">
@@ -23,7 +27,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Ridavei.FileCryption" Version="1.0.1.1" />
+		<PackageReference Include="Ridavei.FileCryption" Version="1.0.2" />
 	</ItemGroup>
 
 </Project>
