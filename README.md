@@ -18,7 +18,7 @@ namespace TestProgram
         public static void Main (string[] args)
         {
             ContentType contentType;
-            object fileInfo;
+            string fileInfo = "YOUR_PATH_TO_THE_FILE";
             string password;
             
             /*
