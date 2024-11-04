@@ -59,7 +59,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Setup .NET
-      uses: actions/setup-dotnet@v2
+      uses: actions/setup-dotnet@v4
       with:
         dotnet-version: |
           3.1.x
@@ -77,7 +77,7 @@ jobs:
       run: dotnet pack --no-build --configuration Release --output out
     - if: startsWith(github.ref, 'refs/tags/')
       name: Upload artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: Artifact
         path: ${{ github.workspace }}/out
@@ -89,7 +89,7 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: Download artifact
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4
       with:
         name: Artifact
     - name: Publish to NuGet
